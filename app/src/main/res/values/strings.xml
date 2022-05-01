@@ -1,0 +1,60 @@
+<resources>
+    <!--app-->
+    <string name="app_name">Lat2-IF10K-10119902-Muhammad Nurkholiq</string>
+    <string name="app_logo">BloodShare</string>
+    <string name="user">Muhammad Nurkholiq</string>
+    <!--hint-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <!--text-->
+    <string name="login">Login</string>
+    <string name="connect_with_facebook">connect with facebook</string>
+    <string name="or">OR</string>
+    <string name="doesn_t_have_account">Doesn\'t have account ?</string>
+    <string name="register">Register</string>
+    <string name="icon_back">icon back</string>
+    <string name="facebook">Facebook</string>
+    <string name="default_location">Default Location</string>
+    <string name="reshus">Reshus</string>
+    <string name="job">Job</string>
+    <string name="email">Email</string>
+    <string name="home_address">Home Address</string>
+    <string name="organization">Organization</string>
+    <string name="personal">Personal</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="agree_with_terms_and_conditions">Agree with Terms and Conditions</string>
+    <string name="terms">Terms</string>
+    <string name="select_off">Select off</string>
+    <string name="select_on">Select on</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="almost_there">Almost There</string>
+    <string name="thank_you">Thank you registering with us. One more step, you need to check your email to active your account</string>
+    <string name="verify">Verify</string>
+    <string name="verify_your_account">Verify your Account</string>
+    <string name="verification">We have send verification code to your email</string>
+    <string name="enter_verification">enter verification code here…</string>
+    <string name="send">send</string>
+    <string name="resend">Resend</string>
+    <string name="icon_header_profile">Icon Header Profile</string>
+    <string name="icon_side_menu">icon side menu</string>
+    <string name="icon_notification">icon notification</string>
+    <string name="blood_type_b">Blood type : B</string>
+    <string name="blood_needed">Blood Needed</string>
+    <string name="_75">75</string>
+    <string name="donor_history">Donor History</string>
+    <string name="_5_gives_2_received">5 Gives, 2 Received</string>
+    <string name="_5_new_messages">5 New Messages</string>
+    <string name="message">Message</string>
+    <string name="_4_user_need_blood">4 User need blood</string>
+    <string name="search_donor_near_you">Search donor near you</string>
+    <string name="search_donor">Search Donor</string>
+    <string name="thanks">thanks</string>
+    <string name="_330">330</string>
+    <string name="blood_received">blood received</string>
+    <string name="_100">100</string>
+    <string name="blood_give">blood give</string>
+    <string name="profile">Profile</string>
+</resources>

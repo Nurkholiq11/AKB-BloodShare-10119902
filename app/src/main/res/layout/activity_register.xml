@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:id="@+id/activity_register"
+    android:textSize="18sp">
+
+    <!--  header  -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_header"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/icon_back"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/ic_header_back"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <!-- content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <!-- input username -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/username"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <!-- input email -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <!-- input username -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/phone_number"
+            android:inputType="text"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <!-- gender -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/male"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_register_radio_on"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="104dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/female"
+                android:textSize="16sp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_register_radio_off" />
+
+        </LinearLayout>
+
+        <!-- option 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:autofillHints=""
+                android:drawableEnd="@drawable/ic_register_dropdown"
+                android:hint="@string/blood_type"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableEnd="@drawable/ic_register_dropdown"
+                android:hint="@string/reshus"
+                android:inputType="text"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <!-- input password -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <!-- input retype password -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/retype_password"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <!-- organization -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/personal"
+                android:textSize="16sp"
+                android:drawablePadding="15dp"
+                app:drawableStartCompat="@drawable/ic_register_radio_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/organization"
+                android:textSize="16sp"
+                android:drawablePadding="15dp"
+                android:layout_marginStart="80dp"
+                app:drawableStartCompat="@drawable/ic_register_radio_off" />
+
+        </LinearLayout>
+
+        <!-- job -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:hint="@string/job"
+            android:inputType="none"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <!-- home address -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:autofillHints=""
+            android:hint="@string/home_address"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <!-- location -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawableEnd="@drawable/ic_location"
+            android:hint="@string/default_location"
+            tools:ignore="TextContrastCheck"
+            android:inputType="none"
+            android:autofillHints="" />
+
+        <!-- terms -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/agree_with_terms_and_conditions"
+            android:textSize="16sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/ic_register_terms_on" />
+
+
+        <Button
+            style="@style/Btn_register"
+            android:id="@+id/btn_RegisterToVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/register"
+            app:backgroundTint="@null"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
